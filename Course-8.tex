@@ -1,0 +1,69 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+%Allows the use of color.
+\usepackage{rotating}
+%This is the package required to rotate tables.
+\usepackage{wrapfig}
+%Used to nest tables with text.
+\usepackage{colortbl}
+%Allows the loading of color palettes to create color tables.
+\usepackage{nicematrix}
+%Install the graphics package to add pictures and visuals.
+\usepackage{graphicx}
+%With this command, the name of your images will be written as "Figure" instead of "Figure".
+\renewcommand{\figurename}{Figure}
+%With this command, the list of your images is written as "List of Shapes".
+\renewcommand{\listfigurename}{List of Figures}
+%You can edit Caption with this command.
+\usepackage{caption}
+%You can edit the text on Caption with this command.
+\captionsetup[figure]{labelfont=bf, labelsep=period} %bf: bold font
+%period with : instead of . you use.
+
+\begin{document}
+	
+	Görsel eklerken kritik olan unsur burada kullandýðýmýz bu Tex dosyamýz nerede ise görsellerimizi de orada bulundurmalýyýz. 
+	
+	\centering
+	
+	%Aþaðýdaki kod ile "figure" ile yani görsellerinizi ekleyebiliyorsunuz.
+	
+	\begin{figure}[!ht] %!:zorla h:here t:top b:bottom 
+		%Soldan saða yazým öncelikli sýralamayý söyler.
+		
+		\centering %Görselleri ortalar.
+		
+		\caption{Monetarist Grafik} %Görselinizin baþlýðý
+		
+		\label{Þekil1}	
+		
+		\includegraphics{grafik2} %Görselinizin isminizi yazýnýz.
+		
+		\vspace{0.5cm}
+		
+		\textbf{\textit{Kaynak} :} \textit{OECD, 2020} 
+		%Kaynak olarak yazabilirsiniz. Ama bu bir alýntý deðildir.
+		
+	\end{figure}
+	
+	Þimdi buraya bu þekilleri atýfladýðýmýzýz düþünelim. Ýlk olarak \textbf{\textcolor{red}{Þekil \ref{Þekil1}}} inceleyelim.
+	
+	% Verdiðimiz label komutu \ref komutunun çalýþmasýnda kolaylýk saðlamaktadýr. Bu referans daha sonra metin için iþaretlemeler için kullanýþlýdýr.
+	
+	\newpage
+	
+	\listoffigures
+	\ref{Þekil1}
+	
+	
+\end{document}

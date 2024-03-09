@@ -1,0 +1,122 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{setspace}
+
+
+%1. Determining line spacing
+
+\setlength{\parskip}{0.1cm}
+
+% Here we can specify paragraph spacing before the begin document. We can do this by writing the code \setlength{\parskip}{0.3cm} under the usepackage code. The main purpose here is to determine how much space will remain between paragraphs. See Below is the implementation of the code. If we apply this as 5 cm. But the most ideal gap adjustment is 0.3cm. You can also reduce it to 0.2 cm if you want.
+
+%You can also set this in points later.
+
+% \setlength{\parskip}{10pt}
+
+%It can be set with the  code. But since we have already set the 10 pt command from the commands above, we do not need to adjust it now. You can use this code if you want to do it manually or set a different font size on the paragraph.
+
+% 2. Adjusting the Line Start Indent
+\setlength{\parindent}{0.3cm}
+% For example, if you make it 1cm, it will start from the inside.
+% The first line of the paragraph started 1cm in. The decision on this is entirely up to you.
+
+% \setlength{\parindent}{10pt}
+% Likewise, you can also set the point type with this code.
+
+%3. We can make additional adjustments to the page ratio regarding binding.
+
+\usepackage[left=4cm, right=2cm, top=2cm, bottom=4cm, twoside]{geometry}
+% For example, if we make it as lipsum[1-8], these texts will extend to the 2nd page.
+% Then, put a % sign in front of the \usepackage[top 2cm]{geometry} code and make it a comment. When we run our skin code, which is already additional. The layout of the page will change. Page 1 shows it aligned to the right.
+% The left side will show the back sheet printing part. You can also make this page layout like this. You can see this as the binding ratio.
+%Here, when it says top is 2cm, it says that the right, left, bottom and top page margins are all 2 cm, but when it says twoside, it shows that they can all be adjusted to different sizes and changes the page structure. What is important here is the twoside part.
+
+% 4. Changing Paper Size
+
+% As a continuation of this process, let's see what else we can do with the paper size. There is also a "landscape" code related to paper size.
+
+%When we use the "landscape" code instead of  twoside, the paper comes horizontally, not vertically. Again, comment the twoside code with % and
+
+%\usepackage[left=4cm, right=2cm, top=2cm, bottom=4cm, landscape]{geometry}
+
+%When we use this code, see, it turns the paper horizontally.
+%It will be both front and back and horizontal.
+%Horizontal formats are especially important for presentations. Or you can use them if you are going to create a horizontal documentation.
+
+%5. Creating a Blank Page
+
+\pagestyle{empty}
+
+% There is a command we call pagestyle for blank paper without page numbers. This command will create a blank page for you.
+
+%What it creates here is a documentation without page numbers. Normally, it should also give a new page, that is, a blank page, but it does not give this command because the package that gives it is not installed.
+
+% When this command is used, it means that all pages will be unnumbered, friends, and look, when it is written in front of the begin document, it ensures that the entire documentation will be unnumbered.
+
+%6. Changing the Page Number
+
+\pagestyle{headings}
+
+% The page number will be at the top. See the numbers at the top right.
+
+%\pagestyle{headings}
+
+% But this only works for the right page, there is another command for the left page, that is, the page on the back side.
+
+%7. Putting the Page Number in the Middle (standard)
+
+\pagestyle{plain}
+
+%code is used. But even if you don't write this, this code will run automatically. So, when you run automatic wizards in the background, it is actually the pagestyleplain code it provides you. In other words, even if you are not typing, it creates the page layout for you.
+
+
+	\begin{document}
+
+	
+	\lipsum[1]
+	
+	%8. Making Unnumbered Pages
+	
+	\thispagestyle{empty}
+	
+	% Let's say you wanted to make a page unnumbered once in a while. Especially important for this entry. If you want to make the introduction part without a number. Then we need to use this code. This ensures that the first page is unnumbered. Look, there are no numbers at the top or bottom. These sections can be used especially for the "INTRODUCTION" and "SUMMARY" pages.
+	
+	%9. Creating a Blank Page
+	
+	\newpage
+	
+	% For example, you typed text by typing "LOGIN". You're done and want to move on to the new page. Then use the \newpage command.
+	\lipsum[1-3]
+	%10. Starting the Page Numbering Process After Blank Page
+	
+	\setcounter{page}{1}
+	
+	%Then, for the page that will start with number 1, just write the command "\setcounter{page}{1}" next to it.
+	
+	%11th. Changing the Styles of Page Numbers
+	
+	\pagenumbering{novel}
+	\pagenumbering{arabic}
+	\pagenumbering{alpha}
+	
+	
+	%12. Adjusting Line Spacing
+	
+	\doublespacing
+	\onehalfspacing
+	
+	%13. Center the text
+
+	
+	\pagenumbering{novel}
+	
+	
+\end{document}

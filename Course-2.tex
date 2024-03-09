@@ -1,0 +1,203 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+
+\begin{document}
+	LESSON 3
+	
+	Let's start the listing process.
+	
+	\begin{itemize}
+		%1. It allows listing to be done with punctuation marks.
+		\item Article 1
+		\begin{itemize}
+			\item Article 1.1.
+			\begin{itemize}
+				\item Article 1.1.1.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	
+	\begin{enumerate}
+		%2. It allows listing as enumeration.
+		\item Article 1
+		\item Article 2
+		\begin{enumerate}
+			%3. The second listing within the numbering is made with letters as (a).
+			\item Article 2.1.
+			\begin{enumerate}
+				%4. The 3rd listing within the numbering is done with roman numerals in the form of i.
+				\item Article 2.1.1.
+				\begin{itemize}
+					%5. Numbering can also be done with punctuation marks.
+					\item Additional information
+					\begin{itemize}
+						%6. Punctuation can also be made within punctuation. The shapes of these punctuations vary.
+						\item Additional information 1.1.
+					\end{itemize}
+				\end{itemize}
+			\end{enumerate}
+		\end{enumerate}
+	\end{enumerate}
+	
+	Articles are in bold font, underlined, etc. can be done.
+	
+	\begin{enumerate}
+		\item Questions
+		\begin{enumerate}
+			%7. Changes can be made with [text] commands.
+			\item[\text{a.}] Answer 1
+			\item[\textbf{a.}] Answer 2
+			\item[\textit{a.}] Answer 3
+			\item[\underline{a.}] Answer 4
+			
+			\item[\text{b)}] Answer 1
+			\item[\textbf{b)}] Answer 2
+			\item[\textit{b)}] Answer 3
+			\item[\underline{b)}] Answer 4
+			
+		\end{enumerate}
+	\end{enumerate}
+	
+	\begin{description}
+		%8. Instead of automatic assignment, we can also explain it ourselves.
+		\item[Option 1]
+		\item[a.] Details
+		\item[b.] Details
+	\end{description}
+	
+	Let's try a new combination.
+	
+	\begin{enumerate}
+		%9. Description logic can be made in [] parentheses.
+		\item[\underline{\textbf{Option 1}}]
+		\item[a.]
+		\item[b.]
+		\item[\underline{\textbf{Option 2}}]
+	\end{enumerate}
+	
+	\begin{center}
+		
+		
+		%10. To make a headline
+		\textbf YOUNG ECONOMISTS CLUB
+		
+		%11th. There are 3 different fonts.
+		%Serif Font Family \textrm
+		%Sans Serif Font Family \textsf
+		%Monospaced Font Family \texttt
+		
+		%12. For font changes
+		%\textit for italics
+		\textsl for %Slanted
+		%\textsc for small caps
+		%Slanted is a non-cursive version of Italic.
+		
+		\textsc{Young Economists Club}
+		
+		%13. Instead of point size, font size can be adjusted with codes such as \tiny, \small... below.
+		
+		{\tiny\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\scriptsize\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\footnotesize\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\small\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\normalsize\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\large\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\Large\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\LARGE\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\huge\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		{\Huge\textbf{YOUNG ECONOMISTS CLUB}}
+		
+		%14. For typewriter font
+		\texttt{YOUNG ECONOMISTS CLUB}
+		
+		{\huge\textbf\texttt{YOUNG ECONOMISTS CLUB}}
+		
+		%15. For plain font
+		
+		\textsf{Young Economists Club}
+		
+		{\huge\textbf\texttt{Young Economists Club}}
+		
+		16%. For Serif Font Family
+		\textrm{Young Economists Club}
+		
+		{\huge\textbf{\textrm{Young Economists Club}}}
+		
+		%17. For slanted text [different from italic]
+		
+		\textsl{Young Economists Club}
+		
+		{\huge\textbf{\textsl{Young Economists Club}}}
+		
+		
+		%18. To write underlined text;
+		
+		\uuline{\textbf{{YOUNG ECONOMISTS CLUB}}}
+		
+		\uline{YOUNG ECONOMISTS CLUB}
+		%Underlined
+		
+		\uuline{YOUNG ECONOMISTS CLUB}
+		% Double Underline
+		
+		\uwave{YOUNG ECONOMISTS CLUB}
+		%Wavy Underline
+		
+		\sout{YOUNG ECONOMISTS CLUB}
+		%Strike-through
+		
+		\xout{YOUNG ECONOMISTS CLUB}
+		
+		\dashuline{YOUNG ECONOMISTS CLUB}
+		%Dash
+		
+		\dotuline{YOUNG ECONOMISTS CLUB}
+		%Dotted Line
+		
+		\dotuline { }
+		
+		%To write old style numbers
+		
+		\oldstylenums{0123456789}
+		
+	\end{center}
+	
+	%19. To write letters of the foreign alphabet
+	\'{to}
+	
+	\`{e}
+	
+	\^{e}
+	
+	\"{to}
+	
+	\~{e}
+	
+	\={e}
+	
+	\.{to}
+	
+	\v{e}
+
+	\u{e}
+
+	\H{e}
+
+\end{document}

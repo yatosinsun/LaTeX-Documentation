@@ -1,0 +1,40 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+
+\begin{document}
+	
+	\lipsum[1]
+	
+	\renewcommand{\refname}{Kaynakça}
+	
+	
+	Bu alanda önemli olan \cite{makale:Keynes} makalelerinize yer verin \cite{makale:Acemoglu}. Bunu yaparken de alýntý \cite yaptýðýnýz \cite{makale:Robinson} çalýþmalarý burada yer vererek intihal \cite{makale:Acemoglu} oranýnýzý \cite[s.25,2020]{makale:Robinson} düþürün.
+	
+	
+	
+	\begin{thebibliography}{99}
+		\bibitem{makale:Acemoglu} Acemoglu, D., (2005) \emph{Why Nations Fail?} , Pearson.
+		\bibitem{kitap:Acemoglu} Acemoglu, D., (2008) \emph{Why Nations Fail?}, McGraw-Hill.
+		\bibitem{makale:Robinson} Robinson, J. (2015) \emph{State,Powerty and Democracy}, Pearson.
+		\bibitem{makale:Keynes} Keynes, J. (1940) \emph{Genel Teori}, Pearson.
+		
+	\end{thebibliography}
+	
+	%Bu alaný oluþturmak için öncelikle Bibliography oluþturmamýz gerekir. Bunun için de yanda boþ bir sayfa açýp bunu kaydedin ve kaydederken de "dosyaadý.bib" þeklinde yazarak, "tex" dosyanýzýn olduðu yere kaydediniz. Daha sonra da "document.bib" sayfasýnda üst menüde yer alan "Bibliography" kýsmýndan referans tipinizi seçerek doldurunuz. Devamýnda "tex" sayfanýza gidip alýntýlarýnýzý iþaretleyebilirsiniz. 
+	
+	Schumpeter?in bilimsel çalýþmalarýnda kapitalist piyasa sisteminin iþleyiþ biçiminin deðiþimini inceler. Ýncelemesine döngüsel akým modeli ile baþlar\cite{kitap:Gujarati}. Fakat giriþimciyi modele dahil ederek ekonomik geliþmeyi saðlamýþ olur. Ekonomide ki bu geliþmeyi de temelde piyasa yapýsýnýn dinamiklerine baðlar\cite{makale:Ornek}. Bunlar üretici ve tüketici arasýndaki seçimler, piyasadaki üretim miktarý ve giriþimcinin inovasyonuyla mallarýn görünümlerinin deðiþmesidir. Burada asýl odak noktasý yapýsal nitelikteki deðiþimleri oluþturan mallarýn dönüþümüdür. Çünkü tercihler ya da seçimler ile miktar ona göre statik bir yapýdýr\cite{kitap:Minsky}. Ama giriþimcinin inovasyonu\cite{kitap:Karaman} yapýsal olduðu için tüm bu statik yapýyý deðiþtirebilmektedir.
+	
+	\bibliographystyle{plain}
+	\bibliography{document}
+	%BibTeX üzerinden alýntý yapmak için yukarýdaki iki kodu çalýþtýrmalýsýnýz.
+	
+	%Bu ana kadar 2 tane alýntý sistemi gördük. Ýkisinin de sonuçlarý aynýdýr. Hangisini isterseniz onu kullanabilirsiniz. Eðer Word'de alýntýlarýnýzý kaydederek gitmeyi seviyorsanýz "BibTeX" size uygun olacaktýr. Ama yazým esnasýnda baþka bir sayfa kullanmadan otomatik ekleyecekseniz de ilk seçimi uygulayabilirsiniz.
+	
+\end{document}

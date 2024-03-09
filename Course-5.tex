@@ -1,0 +1,179 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+
+\begin{document}
+	
+	\onehalfspacing
+	
+	%1. To prepare a table in matrix form, run the basic code below. 
+	
+	\begin{center}
+		
+		%We did the table operation to see it in the middle..
+		
+		\begin{tabular}{cc}
+			Data1 & Data2 \\
+			Data3 & Data4
+		\end{tabular}
+		
+		\vspace{0.5cm}
+		
+		%2. Here, the expression "cc" is automatically set as center and also means the number of columns. It means that there are now 2 columns. If you want to make one more column, you need to write "ccc".
+		
+		% You can add multiple lines in this process. The expression "&" means "and" (cells are separated by this expression), and when the line ends - if you are going to move to another line, you need to put "\\". You do not need to put this statement in the last line.
+		
+		\begin{tabular}{ccc}
+			Data1 & Data2 & Data5 \\
+			Data3 & Data4 & Data5
+		\end{tabular}	
+		
+		\vspace{0.5cm}
+		
+%The number c we wrote  and the number of columns must always be equal.
+
+
+%3. If you want to justify left or right instead of center, you must give a command. For example, if you want the 1st column to be aligned to the left and the 2nd column to be aligned to the right, you can give the direction when you type "lr".
+		
+		\begin{tabular}{lr} 
+			
+			LeftData1 & 	RightData2 \\
+			Data3  	 & 	Data4 \\
+			
+			% l : left
+			% r : right
+			% c : center
+			
+		\end{tabular}
+		
+		\vspace{0.5cm}	
+		
+		%4. If you want to make a painting. First of all, you can do {|c|c|c|} in the code. This gives you the determinant view
+		
+		\begin{tabular}{|c|c|c|}
+			Data1 & Data2 & Data5 \\
+			Data3 & Data4 & Data6 \\
+		\end{tabular}	
+		
+		\vspace{0.5cm}
+		
+		
+		%5. If you want to add an overall and inner frame to the determinant view, you can use the "\hline" command.
+		% For example, if you want to cover the first line, \hline can be written over the first line. If you want to close the bottom of the first line, you can write the hline code written under the first line. You can also cover the top of the line. As a last step, you can close it by typing hline under the 2nd line. Of course, you don't have to write underneath, you can also write next to it as shown. 
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Data1 & Data2 & Data5 \\ 
+			\hline
+			Data3 & Data4 & Data6 \\ \hline
+		\end{tabular}	
+		
+		\vspace{0.5cm}
+		
+		
+		%6. You can also use a similar method if you want to add internal headings to your tables.
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Department} & \textbf{Scope} & \textbf{Class} \\ 
+			\hline
+			Data1 & Data2 & Data5 \\ 
+			\hline
+			Data3 & Data4 & Data6 \\ \hline
+		\end{tabular}	
+		
+		\vspace{0.5cm}
+		
+		
+		%7. An alternative to underlining is "\cline{1-3}" where 1-3 tells us which column to start and end in. After typing cline {1-2}, we must not remove the hline code under it, otherwise it will continue to be underlined.
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Department} & \textbf{Scope} & \textbf{Class} \\ \cline{1-3}
+			\hline
+			Data1 & Data2 & Data5 \\ 
+			\hline
+			Data3 & Data4 & Data6 \\ \hline
+		\end{tabular}	
+		
+		\vspace{0.5cm}
+		
+		
+		%8. For example, you wanted to create a table and write a title and source.
+		
+		\textbf{Table 1.1. Unit Root Test} 
+		
+		\vspace{0.15cm}
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Department} & \textbf{Scope} & \textbf{Class} \\ \cline{1-3}
+			\hline
+			Data1 & Data2 & Data5 \\ 
+			\hline
+			Data3 & Data4 & Data6 \\ \hline
+		\end{tabular}	
+		
+		\vspace{0.15cm}	 
+		
+		\textbf{\textit{Source} :} \textit{OECD, 2020} 
+		
+		
+		%9. For example, to create a field in the Contents section logic, you can add a new column and give it a range.
+		% By writing p{2cm} here, a range is given to the 4th column. All previous columns will be averaged, but when the 4th column is specified as 2cm, the command is given that the length of the 4th column will be 2 cm. Here, when the \dotfill command is given to the 4th column, it will put dots as much as the space there.
+		
+		\textbf{Table 1.1. Unit Root Test} 
+		
+		\vspace{0.15cm}
+		
+		\begin{tabular}{|c|c|c|p{2cm}|}
+			\hline
+			\textbf{Department} & \textbf{Scope} & \textbf{Class} & \textbf{Class2} \\ \cline{1-4}
+			\hline
+			Data1 & Data2 & Data5 & \dotfill \\ 
+			\hline
+			Data3 & Data4 & Data6 & \dotfill \\ \hline
+		\end{tabular}	
+		
+		\vspace{0.15cm}	
+		
+		\textbf{\textit{Source} :} \textit{OECD, 2020} 
+		
+		
+		%10. If we want to create the table in Cell Merge rather than as text;
+		
+		\begin{tabular}{|c|c|c|}
+			
+			\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\
+			
+%Here the first parenthesis contains the number of columns to be joined.
+%The second parenthesis represents the average.
+%The last parenthesis asks us to write the title.
+			
+			\hline
+			\textbf{Department} & \textbf{Scope} & \textbf{Class} \\ \cline{1-3}
+			\hline
+			Data1 & Data2 & Data5 \\ 
+			\hline
+			Data3 & Data4 & Data6 \\ \hline
+		\end{tabular}	
+		
+		\vspace{0.15cm}	
+		
+		\textbf{\textit{Source} :} \textit{OECD, 2020} 	
+		
+		
+	\end{center}
+	
+	\lipsum[1]
+	
+\end{document}

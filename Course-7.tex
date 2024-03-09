@@ -1,0 +1,472 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+%It will enable the use of color.
+\usepackage{rotating}
+%This is the package required to rotate tables.
+\usepackage{wrapfig}
+%tables are used to be nested with text.
+\usepackage{colortbl}
+%Allows the loading of color palettes to create color tables.
+\usepackage{nicematrix}
+
+\begin{document}
+	
+	\onehalfspacing %1.5 satýr aralýðý
+	
+	Kümelerde her A kümesinin elemaný B kümesinin elemaný ise A kümesi B kümesinin alt kümesidir ve þöyle gösterilir.
+	
+	%Bu ifadeyi 2 þekilde gösteririz. 1.si kodlarla 2.si kýsayollarla
+	
+	%1. YOL
+	
+	Kümelerde her A kümesinin elemaný B kümesinin elemaný ise A kümesi B kümesinin alt kümesidir ve þöyle 
+	\begin{math}
+		$ A $ \subset  $ B $
+	\end{math}
+	gösterilir.
+	
+	%2. YOL
+	Kümelerde her $A$ kümesinin elemaný $ B $ kümesinin elemaný ise $ A $ kümesi $ B $ kümesinin alt kümesidir ve þöyle $ A \subset B $ gösterilir.
+	
+	\vspace{1cm}
+	
+	a, b ve c ise A kümesinin elemanlarýdýr.
+	
+	$ A=\{a,b,c\} $
+	
+	\vspace{1cm}
+	
+	Ýndisleri de þöyle yazarýz.
+	
+	$ a_1 , a_2 $ , $\ldots a_n$
+	
+	$ a^2 + b^2 = c^2 $
+	
+	\vspace{1cm}
+	
+	Birden çok karekteri indis yapmak için;
+	
+	$ a_{mxn} , a^{23} $
+	
+	\vspace{1cm}
+	
+	Greek alfabesinin özel karakterleri de þöyle çalýþýr.
+	%Çalýþmazsa öncelikle \usepackage{amsfonts} yüklemelisiniz.
+	
+	$ \alpha, \beta, \epsilon, \delta, \phi, \omega, \gamma, \sigma, \pi $
+	
+	$  \Delta, \Phi, \Omega, \Gamma, \Sigma, \Pi $	
+	% \Alpha, \Beta, \Epsilon nun büyük puntosu yoktur.
+	
+	\vspace{1cm}
+	
+	Limit iþlemleri için 2 farklý gösterim olabilir.
+	
+	$ \lim_{x \to x_0} $
+	
+	$ \displaystyle \lim_{x \to x_0} $
+	
+	\vspace{0.5cm}
+	
+	%Deneme-1: Karýþýk bir mix type yazalým.
+	
+	Verilen her $\epsilon>0.5$ sayýsýna karþýlýk $0<|x-x_0|>\delta$ iken $ |f(x)-L|<\epsilon $ olacak biçimde en az bir $ \delta>0 $ sayýsý varsa $ f $ fonksiyonun $ x_0 $ noktasýnda limiti vardýr denir ve $ \lim_{x \to x_0} f(x)=L  $ ile gösterilir.
+	
+	\vspace{0,5cm}
+	
+	%limit gösterimini deðiþtirelim.
+	
+	Verilen her $\epsilon>0.5$ sayýsýna karþýlýk $0<|x-x_0|>\delta$ iken $ |f(x)-L|<\epsilon $ olacak biçimde en az bir $ \delta>0 $ sayýsý varsa $ f $ fonksiyonun $ x_0 $ noktasýnda limiti vardýr denir ve $\displaystyle \lim_{x \to x_0} f(x)=L  $ ile gösterilir.
+	
+	\vspace{0.5cm}	
+	
+	Trigonometrik yazýmý görelim.
+	
+	$ \sin x, \cos x , \tan x , \cot x $
+	
+	\vspace{0,5cm}
+	
+	Ýntegral yazýmý görelim.
+	
+	\vspace{0.5cm}	
+	
+	$ \int_{0}^{\pi} \sin x\ dx $
+	
+	\vspace{0.5cm}
+	
+	%integral gösterimini deðiþtirelim.
+	$ \displaystyle \int_{0}^{\pi} \sin x\ dx $
+	
+	\vspace{0.1cm}
+	
+	\newpage
+	
+	Toplam iþareti gösterimi yapalým.
+	
+	\vspace{0.5cm}	
+	
+	$ \sum_{i=0}^{n} \frac{1}{n} $
+	
+	\vspace{0.5cm}
+	
+	%toplam gösterimini deðiþtirelim.
+	$ \displaystyle \sum_{i=0}^{n} \frac{1}{n} dx $
+	
+	\vspace{0.5cm}
+	
+	%toplam gösterimini deðiþtirelim.
+	$ \displaystyle \sum_{i=1}^{n} \frac{1}{i}=1+\frac{1}{2}+\ldots + \frac{1}{n} $
+	
+	\vspace{1cm}
+	
+	Üslü sayý yazýmlarý: 3 farklý gösterim
+	
+	\vspace{0.5cm}	
+	
+	$ a_1^2 + a_2^2=a_3^2 $ 
+	
+	\vspace{0.5cm}	
+	
+	$  x^{y^z} , {x^y}^z$ 
+	
+	\vspace{0.5cm}	
+	
+	$ a_{n_k} $
+	
+	\vspace{0.5cm}	
+	
+	Logaritmik gösterim
+	
+	\vspace{0.5cm}	
+	
+	$ \ln_x , \log_a , \exp{x} $
+	
+	\vspace{0.5cm}			
+	
+	Geniþ çarpýmlý iþlemlerde boyutsal parantezler almak için;
+	
+	% $\left[\right]$ komutunu kullanýnýz.
+	
+	%Öncelikle integral iþlemi yapalým
+	
+	\vspace{0.5cm}
+	
+	$ \displaystyle \left(\int_{0}^{\pi} \sin x\ dx \right) $
+	
+	\vspace{0.5cm}
+	
+	%Sonra Toplam iþlemi yapalým
+	
+	$ \displaystyle \sum_{i=1}^{n} \frac{1}{i}=\left(1+\frac{1}{2}+\ldots + \frac{1}{n}\right) $
+	
+	\vspace{0.5cm}
+	
+	Verilen denklem ya da benzeri iþlemleri ortalamak için; 
+	%\[  \] kodlarýný kullanýp arasýna denklemi yazýnýz.
+	
+	Bernoulli Eþitsizliði : $ h \in R  $ ve $ 1+h \geq 0 $ olsun. Bu durumda;
+	
+	\[
+	(1+h)^n \geq 1+nh
+	\]
+	
+	olur.
+	
+	\vspace{0.5cm}
+	
+	Teorem:
+	
+	\[	
+	\sum_{n=1}^ \infty a_n=a_1+a_2+ \ldots + a_n+ \ldots 
+	\]	
+	
+	\vspace{0.5cm}
+	
+	seri yakýnsak ise;
+	
+	\[
+	\lim_{n \to \infty} a_n=0, \quad  (n \in N)
+	\]
+	%Ýki gösterge arasýnda daha fazla uzaklýk için \qquad kullan
+	olur.
+	
+	\newpage
+	
+	Denklem serisi içine metin eklenecekse,
+	
+	\vspace{0.5cm}
+	
+	seri yakýnsak ise;
+	%Ýlk örnek olarak \text{text} kullanýmý (önerilmez)
+	
+	\[
+	\lim_{n \to \infty} a_n=0, \quad \text{ve} \quad (n \in N)
+	\]
+	%Ýki gösterge arasýnda daha fazla uzaklýk için \qquad kullan
+	olur.
+	
+	\vspace{0.5cm}
+	
+	seri yakýnsak ise;
+	%Ýkinci örnek olarak \mbox{ text } kullanýmý (önerilir)(süslü parentez öncesi ve sonrasýnda 1 boþluk býrakýnýz)
+	
+	\[
+	\lim_{n \to \infty} a_n=0, \mbox{ ve } (n \in N)
+	\]
+	
+	olur.
+	
+	\vspace{0.5cm}
+	
+	Denklem eklemek istersek (Notasyonlu)
+	
+	%Ýlk olarak tek tek ekleme iþlemini görelim.
+	%Bu kodda ard arda yazamazsýnýz. Matris mantýðý çalýþmaz.
+	% \[  \] iþlemleri de otomatik notasyon atamaz.
+	
+	
+	\begin{equation}
+		x + y = z 
+		%	a + b = c
+	\end{equation}
+	
+	%Bunun yerine aþaðýdaki kodlamayý kullanýnýz.
+	%Bu size tek seferde birden fazla akýþ saðlayacaktýr.
+	
+	\begin{eqnarray}
+		a+b & \leq & c \\
+		158648 + 289486 & \leq & 38946541
+	\end{eqnarray}
+	% & .. & burada hizalama görevindedir.
+	
+	\vspace{0.5cm}   
+	
+	Notasyonu kaldýrmak isterseniz % \nonumber kullanýn.
+	
+	%Fakat equation ve eqnarray da farklý yazýlýr.
+	
+	\begin{equation}
+		x + y = z \nonumber
+		%	a + b = c
+	\end{equation}   
+	
+	\vspace{0.5cm}  
+	
+	\begin{eqnarray}
+		a+b & \leq & c  \nonumber \\
+		158648 + 289486 & \leq & 38946541
+	\end{eqnarray}
+	% & .. & burada hizalama görevindedir.
+	
+	Ýrrasyonel ifadeler için;
+	
+	\vspace{0.5cm}
+	
+	$ f:A \to \mathbb{R} $ %\mathbb{Z} \mathbb{N} \mathbb{Q} \mathbb{C}
+	foksiyonu $ x_0 \in A $ noktasýnda sürekli olsun. Bu durumda
+	\[
+	|f|:A \to \mathbb{R}
+	\] 
+	fonksiyonu da $ x_0 \in A $ noktasýnda süreklidir.
+	
+	\vspace{0.5cm}  	
+	
+	Notasyonlu denkleme atýf yapalým.
+	
+	
+	\begin{equation}
+		x + y = z  \label{Denklem5}
+		%	a + b = c
+	\end{equation}
+	
+	Diyelim ki metin içinde denklemden atýf yapýp 
+	$ (\textcolor{blue}{\ref{Denklem5}}) $ numaralý denklemi baþka birþeyle iliþkilendirelim. Hatta þov yapýp bir de renk atayalým. Kesmezse bir de kalýn punto yapalým. Yapýyoruz, $ (\textbf{\textcolor{blue}{\ref{Denklem5}}}) $ ve yaptýk.
+	
+	%Bu arada olurda olur \[ \] kodlu denklemlerden birini equation yaparsanýz bu atýf deðiþmez otomatik yenilenir. Ama siz yine gidip \label kýsmýnda güncelleme yapýnýz. Hatta en baþtan numaralandýrarak baþlayýnýz.
+	
+	\vspace{0.5cm} 
+	
+	\newpage	
+	
+	Parçalý fonksiyon tipinde olan denklemler içinde;
+	% "array" ile matris vari þekilde düzenleyebilirsiniz.
+	% "eqnarray" notasyonlu denklem saðlar. 
+	
+	\vspace{0.5cm}  
+	
+	\begin{eqnarray}
+		f(x) =\left\{
+		\begin{array}{rcc}
+			-x+1   & , & x \leq 0 \\
+			x-1    & , & x>0
+		\end{array}\right\}
+	\end{eqnarray}
+	
+	\vspace{0.5cm}  
+	
+	%Ýsterseniz notasyonsuz \[ \] þekilde de yazabilirsiniz.	
+	
+	\[
+	f(x) =\left\{
+	\begin{array}{rcc}
+		-x+1   & , & x \leq 0 \\
+		x-1    & , & x>0
+	\end{array}\right\}
+	\]	
+	%Bu gösterim biraz traþingen bunu kullanmayýn...
+	
+	Matris tipinde olan denklemler içinde;
+	% "array" ile matris vari þekilde düzenleyebilirsiniz.
+	% "eqnarray" notasyonlu denklem saðlar. 
+	
+	\vspace{0.5cm}  
+	
+	$ n \times n $ boyutlu birim matris
+	
+	\begin{eqnarray}
+		I =\left[
+		\begin{array}{cccc}
+			1   &     0    &  \dots &    0    \\
+			0   &     1    &  \dots &    0    \\
+			\vdots  &  \vdots  &    .   &  \vdots \\ 
+			0   &     0    &  \ldots &   1    \\
+		\end{array}\right]_{n \times n}
+	\end{eqnarray}
+	
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm}  
+	
+	$ n \times n $ boyutlu birim matris þöyle de olur. 
+	%Köþeli deðilde parantezli gösterim yapabiliriz.
+	
+	\begin{eqnarray}
+		I =
+		\begin{pmatrix}
+			1   &     0    &  \dots &    0    \\
+			0   &     1    &  \dots &    0    \\
+			\vdots  &  \vdots  &    .   &  \vdots \\ 
+			0   &     0    & \ldots &    1    \\
+		\end{pmatrix}_{n \times n}
+	\end{eqnarray}
+	
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm}  
+	
+	$ n \times n $ boyutlu birim matris þöyle de olur. 
+	%Köþeli yapmanýn baþka yolu / gösterimi yapabiliriz.
+	
+	\begin{eqnarray}
+		I =
+		\begin{bmatrix}
+			1   &     0    &  \dots &    0    \\
+			0   &     1    &  \dots &    0    \\
+			\vdots  &  \vdots  &    .   &  \vdots \\ 
+			0   &     0    & \ldots &    1    \\
+		\end{bmatrix}_{n \times n}
+	\end{eqnarray}
+	
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm} 
+	
+	\newpage
+	
+	$ n \times n $ boyutlu birim matris þöyle de olur. 
+	%Determinant tipi gösterimi yapabiliriz.
+	
+	\begin{eqnarray}
+		I =
+		\begin{vmatrix}
+			1   &     0    &  \dots &    0    \\
+			0   &     1    &  \dots &    0    \\
+			\vdots  &  \vdots  &    .   &  \vdots \\ 
+			0   &     0    & \ldots &    1    \\
+		\end{vmatrix}_{n \times n}
+	\end{eqnarray}
+	
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm} 
+	
+	
+	$ n \times n $ boyutlu birim matris þöyle de olur. 
+	%Köþeli yapmanýn baþka yolu / gösterimi yapabiliriz.
+	
+	\begin{eqnarray}
+		I =
+		\begin{Bmatrix}
+			1   &     0    &  \dots &    0    \\
+			0   &     1    &  \dots &    0    \\
+			\vdots  &  \vdots  &    .   &  \vdots \\ 
+			0   &     0    & \ldots &    1    \\
+		\end{Bmatrix}_{n \times n}
+	\end{eqnarray}
+	
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm} 
+	
+	$ n \times n $ boyutlu birim matris þöyle de olur. 
+	%Çift determinant tipi gösterimi yapabiliriz.
+	
+	\begin{eqnarray}
+		I =
+		\begin{Vmatrix}
+			1   &     0    &  \dots &    0    \\
+			0   &     1    &  \dots &    0    \\
+			\vdots  &  \vdots  &    .   &  \vdots \\ 
+			0   &     0    & \ldots &    1    \\
+		\end{Vmatrix}_{n \times n}
+	\end{eqnarray}
+	
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm} 
+	
+	Metin içerisinde matris eklemek istersek ve bunun small olmasýný isterseniz.
+	% Bunun için \usepackage{nicematrix} kurunuz.
+	
+	\lipsum[1]
+	$ 2 \times 2 $ boyutlu matris;
+	$\begin{bNiceArray}{cc}[small ]
+		1 & 2  \\
+		0 & 3  
+	\end{bNiceArray}$
+	þeklinde gösterilir.
+	
+	\vspace{0.5cm} 
+	
+	Matrisinizin köþelerinin rengini deðiþtirmek isterseniz,
+	$\begin{bNiceMatrix}[delimiters/color=red]
+		1 & 2 \\
+		3 & 4
+	\end{bNiceMatrix}$
+	þeklinde yapabilirsiniz..
+	
+	\vspace{0.5cm} 
+	
+	Uzayan denklemler için kaydýrma yapabilirsiniz.
+	% & ile hizalar bir de "split" kodu ile kaydýrýp ortalayarak tek notasyon verilmesini saðlar.
+	\begin{equation}
+		\begin{split}
+			x + y &\leq 2589486486146 \\
+			&\leq 8948
+		\end{split}
+	\end{equation}
+	
+	\vspace{0.5cm} 
+	
+\end{document}

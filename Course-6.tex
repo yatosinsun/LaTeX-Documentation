@@ -1,0 +1,247 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+%It will enable the use of color.
+\usepackage{rotating}
+%This is the package required to rotate tables.
+\usepackage{wrapfig}
+%tables are used to be nested with text.
+\usepackage{colortbl}
+%Allows the loading of color palettes to create color tables.
+
+\begin{document}
+	
+\renewcommand{\tablename}{\textbf{Table}}
+%3. We can change the table names with this code.
+
+\onehalfspacing
+
+%1. To prepare a table in matrix form, run the basic code below.
+
+\begin{center}
+	
+	\begin{tabular}{|c|c|c|}
+		
+		\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\[1ex]
+		
+		%Here the first parenthesis contains the number of columns to be joined.
+		%The second parenthesis represents the average.
+		%The last parenthesis asks us to write the title.
+		%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+		
+		\hline
+		\textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+		\hline
+		Data1 & Data2 & Data5 \\
+		\hline
+		Veri3 & Veri4 & Veri6 \\ \hline
+	\end{tabular}
+	
+	\vspace{0.15cm}
+	
+	\textbf{\textit{Source} :} \textit{OECD, 2020}
+	
+	
+\end{center}
+
+\lipsum[1]
+
+\begin{table}[h]
+	
+	%h: here , t: top - top of the next page, b: Bottom - bottom of the page, p: page means another page.
+	%We can customize the tables with this code. In particular, we can automatically sort the tables and create memory for referencing.
+	%We tell LaTeX where to put the table with the codes %h - t - b.
+	% Here "!" Putting the command somehow provides the "put this table here" command.
+	% [h!] gives the command to place this here somehow. If he can do it, he will do it, if he can't, don't force him, he has signals too, bro :)
+	
+	\centering
+	%Allows overall centering of the table.
+	
+	\begin{tabular}{|c|c|c|}
+		
+		\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\[1ex]
+		
+		%Here the first parenthesis contains the number of columns to be joined.
+		%The second parenthesis represents the average.
+		%The last parenthesis asks us to write the title.
+		%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+		
+		\hline
+		\textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+		\hline
+		Data1 & Data2 & Data5 \\
+		\hline
+		Veri3 & Veri4 & Veri6 \\ \hline
+		
+	\end{tabular}
+	\caption{Write note for Painting here.}
+	\label{Table1}
+	
+\end{table}
+
+\lipsum[2-3]
+
+\begin{table}[h!]
+	
+	\centering
+	
+	\caption{Write note for Painting here.}
+	\label{Table2}
+	% Here we define it as a reference in the command we give inside the label.
+	%When we want to refer to these tables in the text, it will be seen if you call it with the name in curly brackets.
+	
+	\begin{tabular}{|c|c|c|}
+		
+		\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\[1ex]
+		
+		%Here the first parenthesis contains the number of columns to be joined.
+		%The second parenthesis represents the average.
+		%The last parenthesis asks us to write the title.
+		%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+		
+		\hline
+		\textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+		\hline
+		Data1 & Data2 & Data5 \\
+		\hline
+		Veri3 & Veri4 & Veri6 \\ \hline
+		
+	\end{tabular}
+	
+	
+\end{table}
+
+%Now let's imagine that we refer to these tables here. Let's first examine it as Table \ref{Table1} and then Table \ref{Table2}.
+
+% The label command we have given makes it easier for the \ref command to work.
+
+%Texts can also be colored with % \textcolor{color}{text}.
+
+%Now let's imagine that we refer to these tables here. Let's first examine it as \textcolor{red}{Table \ref{Table1}} and then \textcolor{red}{Table \ref{Table2}}.
+%You can search "LaTeX:Using Color" for more colors.
+	
+\begin{sideways}
+	
+	%You can make the tables horizontal with this code.
+	
+	\begin{tabular}{|c|c|c|}
+		
+		\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\[1ex]
+		
+		%Here the first parenthesis contains the number of columns to be joined.
+		%The second parenthesis represents the average.
+		%The last parenthesis asks us to write the title.
+		%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+		
+		\hline
+		\textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+		\hline
+		Data1 & Data2 & Data5 \\
+		\hline
+		Veri3 & Veri4 & Veri6 \\ \hline
+		
+	\end{tabular}
+	
+	
+\end{sideways}
+
+
+\begin{rotate}{45}
+	
+	%You can place tables at an angle with this code.
+	
+	\begin{tabular}{|c|c|c|}
+		
+		\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\[1ex]
+		
+		%Here the first parenthesis contains the number of columns to be joined.
+		%The second parenthesis represents the average.
+		%The last parenthesis asks us to write the title.
+		%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+		
+		\hline
+		\textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+		\hline
+		Data1 & Data2 & Data5 \\
+		\hline
+		Veri3 & Veri4 & Veri6 \\ \hline
+		
+	\end{tabular}
+	
+\end{rotate}
+
+\vspace{5cm}
+
+%To place it within the text, it must first be placed between two texts. We add lipsum codes to the beginning and end.
+
+\lipsum[1]
+
+\begin{wraptable}{r}{5cm}
+	
+	%You can make the tables horizontal with this code.
+	
+	\begin{tabular}{|c|c|c|}
+		
+		\multicolumn{3}{c}{\textbf{Table 1.1. Unit Root Test}} \\[1ex]
+		
+		%Here the first parenthesis contains the number of columns to be joined.
+		%The second parenthesis represents the average.
+		%The last parenthesis asks us to write the title.
+		%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+		
+		\hline
+		\textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+		\hline
+		Data1 & Data2 & Data5 \\
+		\hline
+		Veri3 & Veri4 & Veri6 \\ \hline
+		
+	\end{tabular}
+	
+\end{wraptable}
+
+\newpage
+
+\lipsum[2-4]
+
+\vspace{0.3cm}
+
+\begin{tabular}{|c|c|c|}
+	
+	\rowcolor[rgb]{0,0,1}
+	
+	%rgb: red-green-blue
+	%Numbers are opacity. It lies between 0 and 1. 1 is exactly 0 and 0 is no visibility.
+	
+	\multicolumn{3}{c}{\textcolor{white}{\textbf{Table 1.1. Unit Root Test}}} \\[1ex]
+	\hline
+	%Here the first parenthesis contains the number of columns to be joined.
+	%The second parenthesis represents the average.
+	%The last parenthesis asks us to write the title.
+	%one. You can add spaces under the text with the code [0.5ex]. "ex"; It is a more precise measurement than "cm".
+	\rowcolor[gray]{0.6} \textbf{Department} & \textbf{Area} & \textbf{Class} \\ \cline{1-3}
+	\hline
+	\rowcolor[gray]{0.8} Data1 & Data2 & Data5 \\
+	\hline
+	\rowcolor[gray]{0.9} Veri3 & Veri4 & Veri6 \\
+	\hline
+	Color can be assigned to rows with %rowcolor. Here, approaching 0 is darkness and 1 is lightness.
+	
+	\end{tabular}
+
+	\vspace{0.3cm}
+
+	\lipsum[2]
+	
+	
+\end{document}

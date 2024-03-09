@@ -1,0 +1,108 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin5]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[top=2.00cm]{geometry}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+
+%\usepackage{indentfirst}
+%16. With this code we can use it to add spaces to all first paragraphs. When using this, other paragraph left/right justifications should be canceled.
+
+\begin{document}
+	
+	\onehalfspacing
+	
+	\pagenumbering{arabic}
+	
+	\begin{center}
+		INTRODUCTION
+	\end{center}
+	
+	\begin{flushright} 
+		\lipsum[2]
+		%1. We can use this code to fix the notations to the right, especially in model studies.
+	\end{flushright}
+	
+	\begin{flushleft}
+		\lipsum[2]
+		%2. We can use this code to anchor it to the left.
+	\end{flushleft}
+	
+	\newpage
+	
+	\section{PREFACE}
+	%3. We can partition.
+	
+	\lipsum[1]
+	
+	\section{INNOVATION}
+	
+	\lipsum[2]
+	
+	\subsection{Horizontal Innovation}
+	%4. It is used to add subheadings.
+	\lipsum[3]
+	
+	\subsubsection{Institutional Horizontal Innovation}
+	%4. It is used to add another subheading to a subheading.
+	
+	\lipsum[4]
+	
+	\newpage
+	
+	\section*{MODEL}
+	%5. If you want to make a title without numbering.
+	
+	\newpage
+	
+	\pagestyle{fancy}
+	%6. Example of new page type to add ribbon on top of page
+	
+	\lfoot{\LaTeX\ Article Writing}
+	%7. It is done to add text to the bottom left.
+	
+	\rfoot{COURSECON}
+	%8. It is done to add text to the bottom right.
+	
+	%\cfoot{Online}
+	%9. Made to add text to the bottom center.
+	%Not recommended because page numbers are lost.
+	
+	\lhead{GEKO}
+	%10. To add text to the top left.
+	
+	\chead{2021-2022}
+	%11. Above is done to add text to the middle.
+	
+	\rhead{Yarýn / Tomorrow}
+	%12. To add text to the top right.
+	
+	\section{INNOVATION}
+	
+	\lipsum[2]
+	
+	\subsection{Horizontal Innovation}
+	
+	\lipsum[3]
+	
+	\subsubsection{Corporate Horizontal Innovation}
+	
+	\lipsum[5]\footnote{\textit{bkz.}Classical Economics, Cambridge Univ.}
+	%13. To add a quote, simply write the code next to that text. Automatic numbering is done.
+	
+	\lipsum[4]\footnote{bkz. Fill in the blanks$\ldots$}
+	%14. Enter this code to put 3 spaced dots.
+	
+	%15.For example, let's say we added Keyword.
+	
+	\vspace{0.5cm}
+	%If we want to put line spacing after the paragraph.  
+	\textbf{Keyword}
+	
+\end{document}
